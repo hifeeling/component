@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8' />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>图片懒加载组件</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<p style='height: 100px;'></p>
+		<ul class='list'>
+			<li><img original="http://img30.360buyimg.com/da/jfs/t2689/146/2123027043/100166/f471f189/57578bc1N391854f7.jpg" /></li>
+			<li><img original="http://img10.360buyimg.com/da/jfs/t2989/99/251307884/161017/601b744e/57514065Na3b6a20f.jpg" /></li>
+			<li><img original="http://img30.360buyimg.com/da/jfs/t2689/146/2123027043/100166/f471f189/57578bc1N391854f7.jpg" /></li>
+			<li><img original="http://img10.360buyimg.com/da/jfs/t2989/99/251307884/161017/601b744e/57514065Na3b6a20f.jpg" /></li>
+			<li><img original="http://img30.360buyimg.com/da/jfs/t2689/146/2123027043/100166/f471f189/57578bc1N391854f7.jpg" /></li>
+			<li><img original="http://img10.360buyimg.com/da/jfs/t2989/99/251307884/161017/601b744e/57514065Na3b6a20f.jpg" /></li>
+			<li><img original="http://img30.360buyimg.com/da/jfs/t2689/146/2123027043/100166/f471f189/57578bc1N391854f7.jpg" /></li>
+			<li><img original="http://img10.360buyimg.com/da/jfs/t2989/99/251307884/161017/601b744e/57514065Na3b6a20f.jpg" /></li>
+			<li><img original="http://img30.360buyimg.com/da/jfs/t2689/146/2123027043/100166/f471f189/57578bc1N391854f7.jpg" /></li>
+			<li><img original="http://img10.360buyimg.com/da/jfs/t2989/99/251307884/161017/601b744e/57514065Na3b6a20f.jpg" /></li>
+			<li><img original="http://img30.360buyimg.com/da/jfs/t2689/146/2123027043/100166/f471f189/57578bc1N391854f7.jpg" /></li>
+			<li><img original="http://img10.360buyimg.com/da/jfs/t2989/99/251307884/161017/601b744e/57514065Na3b6a20f.jpg" /></li>
+			<li><img original="http://img30.360buyimg.com/da/jfs/t2689/146/2123027043/100166/f471f189/57578bc1N391854f7.jpg" /></li>
+			<li><img original="http://img10.360buyimg.com/da/jfs/t2989/99/251307884/161017/601b744e/57514065Na3b6a20f.jpg" /></li>
+			<li><img original="http://img30.360buyimg.com/da/jfs/t2689/146/2123027043/100166/f471f189/57578bc1N391854f7.jpg" /></li>
+			<li><img original="http://img10.360buyimg.com/da/jfs/t2989/99/251307884/161017/601b744e/57514065Na3b6a20f.jpg" /></li>
+		</ul>
+		<script src='../bower_components/jquery/dist/jquery.js'></script>
+		<script src='style.js'></script>
+		<script>
+			$(function(){
+				var lazy = new Lazyload({
+					callback: function(){
+						// 这里可以处理每个图片的回调
+						// $(this).css('border', '1px solid #F00');
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
