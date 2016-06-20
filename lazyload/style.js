@@ -53,15 +53,19 @@
 
 		// 遍历元素判断是否在视图可视区
 		appear: function(){
-			let screH = $(win).height();
+			let screH = $(win).height(),
+				viewV,
+				viewT,
+				viewB,
+				$item;
 
 			this.updateImgs();
 
 			this.$imgs.each( (index, item) => {
-				var	viewV = item.getBoundingClientRect(),
-					viewT = viewV.top,
-					viewB = viewV.bottom,
-					$item = $(item);
+				viewV = item.getBoundingClientRect(),
+				viewT = viewV.top,
+				viewB = viewV.bottom,
+				$item = $(item);
 
 				// 如果图片没有设置src，使用placeholder
 				if( $item.attr('src') === undefined || $item.attr("src") === false ){
