@@ -138,9 +138,7 @@
 			m.forEach(( e, i ) => {
 				p = _getBd( e );
 				if ( p.top < h * 0.4 && p.bottom > h * 0.4 ) { // 进入距离窗口顶部40%的区域视为主视图模块
-					if ( c == 0 ) {
-						return;
-					} else {
+					if ( c !== 0 ) { // 判断是否已经有模块在最顶端
 						this.initClass(i);
 					}
 				}
